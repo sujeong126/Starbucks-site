@@ -567,7 +567,7 @@ header {
   justify-content: center;
 }
 .mag-content .mag-left {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .mag-content .mag-left a {
   display: block;
@@ -587,7 +587,10 @@ header {
   text-decoration: underline;
 }
 .mag-content .mag-right {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+.mag-content .mag-right img {
+  width: 330px;
 }
 
 /* store */

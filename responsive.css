@@ -90,6 +90,17 @@
     left: 67%;
   }
 
+  /* notice-rolling */
+  .rolling li {
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+  }
+
   /* reward */
   .reward-right {
     width: 750px;
@@ -110,77 +121,28 @@
   }
 }
 
-@media (max-width: 1000px) {
-  /* notice-rolling */
-  .rolling li {
-    width: 250px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #fff;
-    height: 50px;
-    line-height: 50px;
-  }
-}
-
 @media (max-width: 960px) {
-  header {
-    display: none;
-  }
-  .tablet-header {
-    display: block;
-  }
-  .welcome {
-    display: none;
-  }
-  .tablet-welcome {
-    display: block;
-  }
-  .line-notice {
-    display: none;
-  }
-  .tablet-line-notice {
-    display: block;
-  }
-  .reward {
-    display: none;
-  }
-  .tablet-reward {
-    display: block;
-  }
-  .EL-SALVADOR {
-    display: none;
-  }
-  .tablet-EL-SALVADOR {
-    display: block;
-  }
-  .ETHIOPIA {
-    display: none;
-  }
-  .tablet-ETHIOPIA {
-    display: block;
-  }
-  .favorite {
-    display: none;
-  }
-  .tablet-favorite {
-    display: block;
-  }
-  .magazine {
-    display: none;
-  }
-  .tablet-magazine {
-    display: block;
-  }
-  .store {
-    display: none;
-  }
-  .tablet-store {
-    display: block;
-  }
+  header,
+  .welcome,
+  .line-notice,
+  .reward,
+  .EL-SALVADOR,
+  .ETHIOPIA,
+  .favorite,
+  .magazine,
+  .store,
   footer {
     display: none;
   }
+  .tablet-header,
+  .tablet-welcome,
+  .tablet-line-notice,
+  .tablet-reward,
+  .tablet-EL-SALVADOR,
+  .tablet-ETHIOPIA,
+  .tablet-favorite,
+  .tablet-magazine,
+  .tablet-store,
   .tablet-footer {
     display: block;
   }
@@ -263,10 +225,8 @@
     cursor: pointer;
   }
   input[id*="tablet-menu-item"] + label:after {
-    content: '\f078';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 20px;
+    content: url(images/chevron-down-icon.svg);
+    width: 20px;
     position: absolute;
     right: 10px;
   }
